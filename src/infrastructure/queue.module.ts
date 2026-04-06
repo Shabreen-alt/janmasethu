@@ -17,6 +17,9 @@ import { BullModule } from '@nestjs/bullmq';
     BullModule.registerQueue({
       name: 'patient_engagement',
     }),
+    BullModule.registerQueue({
+      name: 'webhook_dispatcher',
+    }),
   ],
   exports: [BullModule],
 })
